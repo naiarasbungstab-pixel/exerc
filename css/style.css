@@ -16,16 +16,15 @@
 .pipe{
  position: absolute;
  bottom: 0;
- width: 80px;
- right: 0%;
+ width: -80px;
+ /*animation: pipe-animation 2s infinite linear; */
 }
-
-.mario{
-   width: 150px; 
+ .mario{
+    width:150px;
     position: absolute;
-    bottom: 100%;
-}
-
+    bottom:0;
+    animation: junp 500ms infinite ease-out;
+ }
 @keyframes pipe-animation {
     fron{
         right: -80px;
@@ -35,3 +34,25 @@
         right: 100%;
     }
 }
+
+@keyframes junp{
+  
+    0%{
+      bottom: 0;    
+    }
+
+    50%{
+        bottom: 180px;
+     }
+  
+    100%{
+       bottom:0;
+    }
+}
+
+
+
+
+
+
+
