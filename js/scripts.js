@@ -34,7 +34,7 @@ cosnt leep = setInterval(() => {
 }, 10);
 
 
-  document.addeventlistener('keydom',junp) ;
+  document.addeventlistener('keydom',jump) ;
 
 
 
